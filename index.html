@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 02</title>
+    
+</head>
+<body>
+    <script>
+        // Homework 02
+
+        // Task 01
+        console.log("Task 01")
+        let restaurant = { name: 'Persian Delights',
+        established: null
+        };
+        console.log(restaurant);
+
+        const year = 1999;
+        restaurant.established = year;
+        restaurant.isHalal = true;
+        console.log(restaurant);
+        let amount;
+
+        // no order yet
+        restaurant.current_order = null;
+        restaurant.total_bill = amount;
+        console.log(restaurant);
+
+        // order came in
+        restaurant.current_order = 'Palau';
+        restaurant.total_bill = 2950.00;
+        console.log(restaurant);
+
+        // now order was processed and can be deleted
+        delete restaurant.current_order;
+        delete restaurant.total_bill;
+        console.log(restaurant);
+
+        // Task 02
+        console.log("");
+        console.log("Task 02")
+        // 1.
+        let vehicle = {};
+        // 2.
+        vehicle.brandName = 'BMW';
+        // 3.
+        vehicle.model = 'X5';
+        console.log(vehicle);
+        // 4.
+        vehicle.model = 'M1';
+        console.log(vehicle);
+        // 5.
+        delete vehicle.model;
+        console.log(vehicle);
+
+        // Task 03
+        console.log("");
+        console.log("Task 03")
+        let salaries = {
+            Aroo: 100,
+            Dalida: 160,
+            Samat: 130
+        }
+
+        let sum = 0;
+        for (let key in salaries) {
+            sum+=salaries[key];
+        }
+        console.log('Total:', sum);
+
+    </script>
+</body>
+</html>
